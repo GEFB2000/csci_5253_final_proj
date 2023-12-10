@@ -1,0 +1,30 @@
+# MinIO
+minio:
+  enabled: true
+
+# setting rootUser, rootPassword
+auth:
+  rootUser: "rootuser"
+  rootPassword: "rootpass123"
+
+drivesPerNode: 1
+
+# number of replicates
+replicas: 1
+
+pools: 1
+
+
+persistence:
+  enabled: true
+
+# resources memory
+resources:
+  requests:
+    memory: 0.5Gi
+
+# buckets
+buckets:
+  - name: demucs-bucket
+    policy: public
+
